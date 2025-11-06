@@ -4,7 +4,10 @@
     "dockerfile": "Dockerfile",
     "args": { "GITHUB_PAT": "${localEnv:GITHUB_PAT}" }
   },
-  "customizations": { "vscode": { "settings": {
+  "customizations": { "vscode": 
+    { 
+      "extensions": [],
+      "settings": {
         "extensions.allowed": {
             "microsoft": false,
             "github": false
