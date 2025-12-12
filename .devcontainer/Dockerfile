@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND=noninteractive TZ=Asia/Shanghai
 
 RUN sed -i -e 's@deb.debian.org@mirrors.aliyun.com@;s@http:@https:@' /etc/apt/sources.list.d/debian.sources && \
     apt-get update > /dev/null && apt-get upgrade -y > /dev/null && \
-    apt-get install -y ncat > /dev/null && \
+    apt-get install -y ncat age expect > /dev/null && \
     sh -c "$(curl -fsLS get.chezmoi.io)" && \
     chsh -s /usr/bin/zsh node
 USER node
