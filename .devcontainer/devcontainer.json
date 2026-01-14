@@ -1,5 +1,5 @@
 {
-  "name": "thesixonenine/dev/typescript-node:24-trixie",
+  "name": "dev-typescript-node",
   "runArgs": ["--name", "dev-typescript-node"],
   "build": {
     "dockerfile": "Dockerfile",
