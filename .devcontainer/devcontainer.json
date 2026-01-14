@@ -1,6 +1,5 @@
 {
   "name": "dev-typescript-node",
-  "runArgs": ["--name", "dev-typescript-node"],
   "build": {
     "dockerfile": "Dockerfile",
     "args": { "GITHUB_PAT": "${localEnv:GITHUB_PAT}" }
