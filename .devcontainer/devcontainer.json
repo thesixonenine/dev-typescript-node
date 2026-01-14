@@ -1,9 +1,11 @@
 {
   "name": "thesixonenine/dev/typescript-node:24-trixie",
+  "runArgs": ["--name", "dev-typescript-node"],
   "build": {
     "dockerfile": "Dockerfile",
     "args": { "GITHUB_PAT": "${localEnv:GITHUB_PAT}" }
   },
+  "postStartCommand": "chezmoi update",
   "customizations": { "vscode": 
     { 
       "extensions": ["-dbaeumer.vscode-eslint"],
